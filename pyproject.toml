@@ -1,0 +1,20 @@
+[project]
+name = "gen-ai-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pankaj Singh Pilkhwal", email = "pankajpilkhwal01@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.6",
+    "langgraph>=1.2.16",
+]
+
+[project.scripts]
+my-ai-project = "my_ai_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
